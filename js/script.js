@@ -6,13 +6,13 @@
 
 "use strict"
 
-function calculateAreaOfTriangle() {
+function calculateAreaOfCircle() {
   // input
-  const baselength = parseInt(document.getElementById('radius-length').value)
+  const radiuslength = parseInt(document.getElementById('radius-length').value)
 
   // process
-    const areaOfTriangle = (baselength * heightlength) /2
+    const areaOfCircle = (radiuslength * radiuslength) * Math.PI 
 
   // output
-  document.getElementById('area').innerHTML = 'Area is: ' + areaOfTriangle + ' cm²'
+  document.getElementById('area').innerHTML = 'Area is: ' + areaOfCircle + ' cm²'
 }
