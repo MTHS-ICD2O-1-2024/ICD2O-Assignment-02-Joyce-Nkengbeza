@@ -3,7 +3,7 @@
 <html lang="en-ca">
   <head>
     <meta charset="utf-8" />
-    <meta name="description" content="Area Of Triangle With JS" />
+    <meta name="description" content="Area Of A Circle With JS" />
     <meta name="keywords" content="mths, icd2o" />
     <meta name="author" content="Joyce Nkengbeza" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -34,7 +34,7 @@
       href="./favicon-16x16new.png"
     />
     <link rel="manifest" href="./site.webmanifest" />
-    <title>Area Of Triangle With JS</title>
+    <title>Area Of Circle With JS</title>
   </head>
 
   <body>
@@ -43,49 +43,36 @@
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
       <header class="mdl-layout__header">
         <div class="mdl-layout__header-row">
-          <span class="mdl-layout-title">Area Of Triangle With JS</span>
+          <span class="mdl-layout-title">Area Of Circle With JS</span>
         </div>
       </header>
       <main class="mdl-layout__content">
-        <div class="page-content">Area Of Triangle</div>
+        <div class="page-content">Area Of Circle</div>
         <img src="./images/Area-of-Triangle-1.png" />
         <div class="page-content">Please enter the following:</div>
         <br />
         <form>
           <!-- Numeric Textfield -->
-          <p>Base Of Triangle</p>
+          <p>Radius</p>
           <div class="mdl-textfield mdl-js-textfield">
             <input
               class="mdl-textfield__input"
               type="text"
               pattern="-?[0-9]*(\.[0-9]+)?"
-              id="base-length"
+              id="radius-length"
             />
-            <label class="mdl-textfield__label" for="base-length"
-              >Base Length...</label
+            <label class="mdl-textfield__label" for="radius-length"
+              >Radius..</label
             >
             <!-- class "mdl-textfield__error" -->
             <span class="mdl-textfield__error">Input is not a number!</span>
           </div>
           <!-- Numeric Textfield -->
-          <p>Height of Triangle...</p>
-          <div class="mdl-textfield mdl-js-textfield">
-            <input
-              class="mdl-textfield__input"
-              type="text"
-              id="height-length"
-            />
-            <label class="mdl-textfield__label" for="height-length"
-              >Height Length...</label
-            >
-            <!-- class "mdl-textfield__error" -->
-            <span class="mdl-textfield__error">Input is not a number!</span>
-          </div>
           <br />
           <!-- Raised button with ripple -->
           <button
             class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
-            onclick="calculateAreaOfTriangle()"
+            onclick="calculateAreaOfCircle()"
             type="button"
           >
             Calculate
